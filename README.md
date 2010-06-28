@@ -64,6 +64,16 @@ If you are using S3 it would look something like this:
 		
 Then from your Rails views, just setup Seadragon to look for the XML and Images in your rails path.
 
+
+Using S3
+--------
+
+One consideration to keep in mind, is that if you store the images on S3 Seadragon will not be able to read the XML file from the remote host.
+Which is why in the processor I store the XML string in the object model, so I can pull the xml information from there.
+
+If you don't use S3 and instead keep the tiles on your server, you don't need to store the XML in your model.
+
+
 Changelog
 ---------
 
