@@ -62,6 +62,9 @@ If you are using S3 it would look something like this:
 		:storage => :s3,
 		:s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
 		:path => ":attachment/:id/:style/:filename"
+		
+		
+Then from your Rails views, just setup Seadragon to look for the XML and Images in your rails path.
 
 Changelog
 ---------
