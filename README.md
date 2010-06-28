@@ -51,8 +51,6 @@ In your Seadragon Object, you call the paperclip processor like so:
 
 		has_attached_file :seadragon_art, :styles => { :tiled => [{:style => "tiled"}, :xml]},
 		:processors => [:tile_art],
-		:storage => :s3,
-		:s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
 		:path => ":attachment/:id/:style/:filename"
 		
 If you are using S3 it would look something like this:
